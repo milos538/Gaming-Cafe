@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belgrade Gaming Cafe</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="icon" href="img/ikonica.png">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="okvir">
+	<div id="wrep">
+		<div class="kontenjer">
+			<div class="kut kut1"><a href="index.html"><img src="img/logo.png"></a></div><!--
+			--><div class="kut kut2"><a href="birthday.html">BIRTHDAYS FOR GAMERS</a></div><!--
+			--><div class="kut kut3"><a href="contact.html">CONTACT</a></div><!--
+			--><div class="kut kut4"><a href="about.html">ABOUT</a></div>
+		</div>
+	</div>
+	<div id="sredinakontakt">
+		<div class="pola jedan">
+			So, are you interested in your <span> dream birthday?</span><br> Or you are just interested in brutal gaming with the best equipment from keyboard and mice through perfectly comfortable chairs and all <br><span>144hz monitors</span> for the best possible experience? <br>Not to mention the sound brought by our headphones that are made for long hours of playing? <br>
+			If you are and you want to schedule a dream birthday, lan party for your crew or you are our member and you just want to reserve a console for after work, school or obligations and you want to make sure that one will wait for you, please contact us downbelow!<br><span> You have a question? Do it also!</span>
+	</div>
+		<div class="pola dva">
+			<img src="img/34.jpg" width=600px>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="kontakt">
+		<header>Fill in the form..</header>
+		<form method="POST" action="confirmation.php" onsubmit="return validate();">
+		<input type="text" id="fname" name="fname" placeholder="Name"><br>
+		<span id="obaveznoime" class="obavezno"></span><br>
+  		<input type="text" id="fsurname" name="fsurname" placeholder="Surname"><br>
+  		<span id="obaveznoprezime" class="obavezno"></span><br>
+  		<input type="email" id="femail" name="femail" placeholder="E-mail"><br>
+		<span id="obaveznoemail" class="obavezno"></span><br>
+		<select id="razlog" name="razlog">
+    		 <option value="0" disabled selected>Why are you contacting us?</option>
+    		 <option value="Dream birthday">Dream birthday?</option>
+   			 <option value="Reserving console">Reserving console?</option>
+   			 <option value="Question">Question?</option>
+  		</select>
+		<div id="dodatak"></div>
+		<input type="submit" id="submit_form" value="Submit">
+		</form>
+	</div>
+</div>
+</body>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="script/script.js"></script>
+</html>

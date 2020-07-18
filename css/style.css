@@ -1,0 +1,606 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+body{
+	font-size: 100%;
+}
+
+/*
+
+
+
+MENI
+
+
+
+
+*/
+.kontenjer a{
+	text-decoration: none;
+	color: red;
+	font-size: 1.5em;
+	font-family: 'Permanent Marker', cursive;
+	font-size: bold;
+}
+#wrep{
+	width: 100%;
+	height: 5em;
+	background-color: black;
+}
+.kontenjer{
+	width: 100%;
+	height: 5em;
+	position: fixed;
+	background-color: black;
+	z-index: 1;
+}
+.kut{
+	width: 25%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	vertical-align: top;
+	padding-top: 30px;
+	transition: 1s;
+}
+.kut a{
+	transition: all .7s;
+}
+.kut2 a:hover,.kut3 a:hover,.kut4 a:hover{
+	color: white;
+}
+.kut1 img{
+	width: 40px;
+}
+.kut1{
+	padding-top: 20px;
+}
+
+
+/* 
+
+
+
+slajder podesavanja
+
+
+
+*/
+
+
+
+#slider{
+	width: 100%;
+
+}
+#slider img{
+	max-width: 100%;
+}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+/*
+
+
+		CONTAINTER SA KONZOLAMA 
+
+
+*/
+#pokrivac{
+	width: 100%;
+	height: 3em;
+	background-color: black;
+}
+#container{
+	width: 100%;
+}
+#konzole header{
+	margin-top: 2em;
+	height: 3em;
+	color: black;
+	font-size: 2em;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Permanent Marker', cursive;
+}
+#konzole header span{
+	color:red;
+}
+.konzola{
+	width: 25%;
+	display: inline-block;
+	text-align: center;
+}
+.konzola img{
+	border:2px solid white;
+	border-radius: 20px;
+	max-width: 100%;
+}
+.ispod{
+	font-family: sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/*
+
+
+IGRICE KOJE IGRAMO
+
+
+
+
+*/
+
+
+.container1{
+	width: 100%;
+}
+#igrice header{
+	margin-top: 3em;
+	height: 3em;
+	color: black;
+	font-size: 2em;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Permanent Marker', cursive;
+}
+#igrice header span{
+	color:red;
+}
+.box{
+	width: 20%;
+	display: inline-block;
+}
+.box img{
+	max-width: 100%;
+}
+
+.containter1 figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.containter1 figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+/*
+
+
+
+FUTER
+
+
+
+
+*/
+#futer{
+	width: 100%;
+	height: 5em;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+#futer li{
+	display: inline-block;
+	padding: 1em;
+}
+
+#futer span{
+	color: red;
+}
+
+
+/*
+
+
+MEDIA QUEIRIES
+
+
+
+
+*/
+@media screen and (max-width: 805px) {
+ .kontenjer a{
+	font-size: 1em;
+}
+}
+
+@media screen and (max-width: 600px) {
+.kontenjer a{
+	font-size: 0.5em;
+}
+.kut{
+	width: 25%;
+	padding: 0;
+}
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:20px; line-height:24px;}
+
+
+
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+
+#parallax-world-of-ugg .block {
+	background: white;
+	padding: 60px;
+	width:820px;
+	margin:0 auto;
+	text-align:center;
+}
+
+#parallax-world-of-ugg .parallax-one {
+	padding-top: 200px;
+	padding-bottom: 200px; 
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	background-image: url(../img/beograd.png);
+	background-attachment: fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;}
+
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+
+#ofirmi{
+	width: 100%;
+	height: 15em;
+}
+.akreditacija{
+	width: 33.3333%;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: sans-serif;
+}
+#ofirmi2{
+	width: 100%;
+	height: 30vh;
+	margin-top: 2em;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 1.3em;
+}
+#ofirmi2 p{
+	width: 40%;
+	font-size: 20px;
+	margin: 0 auto;
+	font-family:'Source Sans Pro', sans-serif; 
+	font-weight:400; 
+	line-height:24px;
+}
+#ofirmi2 header{
+	margin-bottom: 1.5em;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	color: red;
+	font-family: 'Permanent Marker', cursive;
+	letter-spacing: 10px;
+}
+
+#sredinakontakt{
+	width: 100%;
+	height: 30em;
+	margin-top: 3em;
+}
+.pola{
+	width: 50%;
+	display: inline-block;
+}
+.jedan{
+	float: left;
+	font-size: 1.2vw;
+	font-family: sans-serif;
+	font-weight: 600;
+	padding:1em;
+	height: 80%;
+	line-height: 1.5em;
+}
+.jedan span{
+	color: red;
+	font-size: 1.6em;
+	font-family: 'Permanent Marker', cursive;
+}
+.dva{
+	float: right;
+	text-align: center;
+}
+.dva img{
+	border-radius: 30px;
+	max-width: 100%;
+}
+.clear{
+	clear: both;
+}
+#kontakt{
+	width: 100%;
+	height: 35em;
+}
+#kontakt header{
+	font-size: 2em;
+	font-weight: 600;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+}
+#kontakt form{
+	text-align: center;
+	width: 100%;
+	margin-top: 2em;
+}
+input[type = "text"],input[type = "email"],input[type = "datetime-local"]{
+	padding: 1em 3em;
+	margin-bottom: 1em;
+	border:0;
+    text-align: center;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 1.2em;
+	background-color: inherit;
+	width: 15em;
+}
+input[type = "datetime-local"]{
+	width: 18.5em;
+	padding: 1.1em 0;
+	margin: 1em 0;
+}
+select{
+	padding: 1em 1.5em;
+	border:0;
+    text-align: center;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+	font-size: 1.2em;
+	width: 15em;
+	margin-bottom: 1em;
+}
+textarea{
+	margin-bottom: 1em;
+	border:0;
+ 	text-align: center;
+	border: 2px solid black;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 1.2em;
+    outline: none;
+}
+input[type = "text"]:focus,input[type = "email"]:focus,input[type = "datetime-local"]:focus{
+    padding: 1em 5em;
+    border-color: #8B0000;
+}
+select:focus,textarea:focus{
+  padding: 1em 5em;
+  border-color: #8B0000;
+}
+input[type = "submit"]{
+	padding: 1em 3em;
+	margin: 1em;
+	border:0;
+    text-align: center;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 1.2em;
+	background-color: inherit;
+	text-transform: uppercase;
+	width: 15em;
+}
+input[type = "submit"]:hover{
+	background-color: red;
+	color:white;
+	padding: 1em 5em;
+	border: 2px solid white;
+}
+
+.obavezno{
+	color: red;
+}
+
+#milos{
+	width: 100%;
+	height: 100vh;
+	font-size: 1.5em;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+#milos span{
+	color: red;
+}
+#milos img{
+	max-width: 100%;
+}
+#skrozdole{
+	width: 100%;
+	height: 5em;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+#skrozdole li{
+	display: inline-block;
+	padding: 1em;
+}
+
+#skrozdole span{
+	color: red;
+}
+
+#slikasredina{
+	width: 100%;
+	text-align: center;
+	margin: 5px 0px;
+}
+#slikasredina img{
+	max-width: 100%;
+	border-radius: 50px;
+}
+#tekstsredina{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5em;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	text-align: center;
+}
+#tekstsredina p{
+	display: block;
+	margin: 3em;
+	width: 50%;
+	display: inline-block;
+	text-transform: uppercase;
+}
+#tekstsredina2{
+	margin-top:5em;
+	width: 100%;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 5em;
+}
+#tekstsredina2 header{
+	margin-bottom: 3em;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	color: red;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.mala{
+	display: inline-block;
+	width: 33.3333%;
+	text-align: center;
+	vertical-align: top;
+}
+.mala img{
+	height: 150px;
+	margin-bottom: 10px;
+}
